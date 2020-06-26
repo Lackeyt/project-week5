@@ -2,3 +2,7 @@
 #output{
   display: none;
 }
+
+.jumbotron{
+  text-align: center;
+}

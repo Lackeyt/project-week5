@@ -1,8 +1,8 @@
 #  _Super Galactic Age Calculator_
 
 #### _Calculates a users age in years and life expectancy information, converted to different planets in the solar system_
-##### __Created:__ 5/29/2020
-##### __Last Updated:__ 6/3/2020 
+##### __Created:__ 6/23/2020
+##### __Last Updated:__ 6/23/2020 
 ##### By _**Tyson Lackey**_  
 
 
@@ -68,8 +68,9 @@ _gathers user entered data (Age, sex, continent of residence). Calculates the us
 * HTML
 * CSS
 * Bootstrap
-* Javascript
+* Javascript (ES6)
 * JQuery
+* webpack
 
 ## Resources:
 
