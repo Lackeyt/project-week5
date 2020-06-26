@@ -3,9 +3,9 @@
 export class UserPlanetsAge{
   constructor(age){
     this.earthAge = age
-    this.mercuryAge = Math.floor(age / .24)
-    this.venusAge = Math.floor(age / .62)
-    this.marsAge = Math.floor(age / 1.88)
+    this.mercuryAge = parseFloat((age / .24).toFixed(2));
+    this.venusAge = parseFloat((age / .62).toFixed(2));
+    this.marsAge = parseFloat((age / 1.88).toFixed(2));
   }
   
 }

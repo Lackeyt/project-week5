@@ -14,9 +14,9 @@ _{detailed desc}_
 
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
-| return user inputted age in Mercury years | 10 | 41.5 |
-| return user inputted age in Venus years | 10 | 16.2 |
-| return user inputted age in Mars years | 10 | 5.3 |
+| return user inputted age in Mercury years | 10 | 41.67 |
+| return user inputted age in Venus years | 10 | 16.13 |
+| return user inputted age in Mars years | 10 | 5.32 |
 | return user inputted age in Jupiter years | 10 | .84 |
 | return user inputted age in Saturn years | 10 | .33 |
 | return user inputted age in Uranus years | 10 | .11 |

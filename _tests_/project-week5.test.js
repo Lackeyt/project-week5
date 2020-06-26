@@ -8,15 +8,19 @@ describe('UserPlanetsAge', () =>{
   })
 
   test("return user inputted age in Mercury years", () => {
-    expect(reusableUserPlanetsAge.mercuryAge).toEqual(41)
+    expect(reusableUserPlanetsAge.mercuryAge).toEqual(41.67)
   })
 
   test("return user inputted age in Venus years", () => {
-    expect(reusableUserPlanetsAge.venusAge).toEqual(16)
+    expect(reusableUserPlanetsAge.venusAge).toEqual(16.13)
   })
 
   test("return user inputted age in mars years", () => {
-    expect(reusableUserPlanetsAge.marsAge).toEqual(5)
+    expect(reusableUserPlanetsAge.marsAge).toEqual(5.32)
+  })
+
+  test("return user inputted age in Jupiter years", () => {
+    expect(reusableUserPlanetsAge.jupiterAge).toEqual(.84)
   })
 
 })
