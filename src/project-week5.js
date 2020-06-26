@@ -5,7 +5,6 @@ export class UserDetails{
     this.earthAge = age;
     this.userSex = sex;
     this.userContinent = continent;
-    this.isOverLifeExpectancy;
     this.earthLifeExpectancy;
     switch (sex){
       case "Male":
