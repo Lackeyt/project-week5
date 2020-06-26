@@ -1,23 +1,6 @@
-Get Started:
+#  _Super Galactic Age Calculator_
 
-FIRST: [REMEMBER TO (1) CHANGE package.json PROJECT NAME AND DESCRIPTION TO CURRENT PROJECT NAME AND DESCRIPTION, (2) CHANGE TITLE OF HtmlWebpackPlugin IN webpack.config.js TO CURRENT PROJECT NAME, AND (3) CHANGE TITLE OF project-name.js IN SRC DIRECTORY TO NAME OF CURRENT PROJECT.]
-
-SECOND:
-  $ npm install
-  $ npm install dotenv-webpack --save-dev
-  $ git init
-  $ git add .gitignore
-  $ git commit -m "Activate .gitignore"
-  $ npm run build
-  $ git add .
-  $ git commit -m "Initial global commit"
-
-  $ npm run start (to initiate live server)
-
-
-#  _{title}_
-
-#### _{brief desc}_
+#### _Calculates a users age in years and life expectancy, converted to different planets in the solar system_
 ##### __Created:__ 5/29/2020
 ##### __Last Updated:__ 6/3/2020 
 ##### By _**Tyson Lackey**_  
@@ -31,13 +14,23 @@ _{detailed desc}_
 
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
+| return user inputted age in Mercury years | 10 | 41.5 |
+| return user inputted age in Venus years | 10 | 16.2 |
+| return user inputted age in Mars years | 10 | 5.3 |
+| return user inputted age in Jupiter years | 10 | .84 |
+| return user inputted age in Saturn years | 10 | .33 |
+| return user inputted age in Uranus years | 10 | .11 |
+| return user inputted age in Neptune years | 10 | .06 |
+| return user inputted age in Pluto years | 10 | .04 |
+| return user remaining years left based on avg life expectancy on mercury | 10 | 249.1 |
+| return user remaining years left based on avg life expectancy on Venus | 10 | 97.5 |
+| return user remaining years left based on avg life expectancy on Mars | 10 | 31.9 |
+| return user remaining years left based on avg life expectancy on Jupiter | 10 | 5.05 |
+| return user remaining years left based on avg life expectancy on Saturn | 10 | 2.03 |
+| return user remaining years left based on avg life expectancy on Uranus | 10 | .71 |
+| return user remaining years left based on avg life expectancy on Neptune | 10 | .36 |
+| return user remaining years left based on avg life expectancy on Pluto | 10 | .241 |
+| return user years over avg life expactancy if inputted age is > life expectancy for each planet | 100 | Venus: 32.5
 
 ## Setup/Installation Requirements
 
@@ -53,8 +46,8 @@ _{detailed desc}_
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open via Bash/GitBash:
 
 1. Clone this repository onto your computer:
-    "git clone {github repo URL}"
-2. Navigate into the "{project name}" directory in Visual Studio Code or preferred text editor:
+    "git clone https://github.com/Lackeyt/project-week5"
+2. Navigate into the "project-week5" directory in Visual Studio Code or preferred text editor:
 3. Open the project
     "code ."
 4. Open your computer's terminal and navigate to the directory bearing the name of the program and containing the top level subdirectories and files.
