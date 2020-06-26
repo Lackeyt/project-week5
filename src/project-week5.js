@@ -11,6 +11,7 @@ export class UserPlanetsAge{
     this.jupiterAge = parseFloat((age / 11.86).toFixed(2));
     this.saturnAge = parseFloat((age / 29.46).toFixed(2));
     this.uranusAge = parseFloat((age / 84.01).toFixed(2));
+    this.neptuneAge = parseFloat((age / 164.79).toFixed(2));
   }
   
 }
