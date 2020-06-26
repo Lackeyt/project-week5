@@ -105,6 +105,7 @@ export class UserDetails{
   }
 
   isValidAge(){
-    
+    if (Number.isInteger(this.earthAge) && this.earthAge >= 0) return true
+    return false
   }
 }
