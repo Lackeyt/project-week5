@@ -103,4 +103,8 @@ export class UserDetails{
     let yearsRemaining = (this.earthLifeExpectancy - this.earthAge) * -1
     return yearsRemaining
   }
+
+  isValidAge(){
+    
+  }
 }

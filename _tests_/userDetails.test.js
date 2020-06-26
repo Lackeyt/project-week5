@@ -60,4 +60,9 @@ describe('UserDetails', () =>{
     expect(userDets.neptuneYear(userDets.earthYearsPastExpected())).toEqual(.15);
     expect(userDets.plutoYear(userDets.earthYearsPastExpected())).toEqual(.1);
   })
+
+  test("Entered age must be an integer >= 0", () => {
+    const invalidUser = new UserDetails("twenty seven", "Male", "North America");
+    expect(invalidUser.isValidAge()).toBe(false)
+  })
 })

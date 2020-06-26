@@ -14,17 +14,18 @@ _{detailed desc}_
 
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
-| return user inputted age in Mercury years | 10 | 41.67 |
-| return user inputted age in Venus years | 10 | 16.13 |
-| return user inputted age in Mars years | 10 | 5.32 |
-| return user inputted age in Jupiter years | 10 | .84 |
-| return user inputted age in Saturn years | 10 | .34 |
-| return user inputted age in Uranus years | 10 | .12 |
-| return user inputted age in Neptune years | 10 | .06 |
-| return user inputted age in Pluto years | 10 | .04 |
+| return user inputted age in Mercury years | age: 10 | 41.67 |
+| return user inputted age in Venus years | age: 10 | 16.13 |
+| return user inputted age in Mars years | age: 10 | 5.32 |
+| return user inputted age in Jupiter years | age: 10 | .84 |
+| return user inputted age in Saturn years | age: 10 | .34 |
+| return user inputted age in Uranus years | age: 10 | .12 |
+| return user inputted age in Neptune years | age: 10 | .06 |
+| return user inputted age in Pluto years | age: 10 | .04 |
 | return user remaining years left alive based on age, sex, and continent of residence | age: 10, sex: "male", continent: "North America" | 66 |
 | return user remaining years on each planet left based on avg life expectancy | age: 10, sex: "male", continent: "North America" | mercury years left: 275 |
-| return user years over avg life expactancy if inputted age is > life expectancy for each planet | age: 100, sex: "male", continent: "North America" | Venus: 40.32
+| return user years over avg life expactancy if inputted age is > life expectancy for each planet | age: 100, sex: "female", continent: "Asia" | Venus: 40.32 |
+| Age must be an integer >= 0 | age: -5, age: ten | error message |
 
 ## Setup/Installation Requirements
 
