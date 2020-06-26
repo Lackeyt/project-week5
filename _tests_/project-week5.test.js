@@ -23,4 +23,8 @@ describe('UserPlanetsAge', () =>{
     expect(reusableUserPlanetsAge.jupiterAge).toEqual(.84)
   })
 
+  test("return user inputted age in saturn years", () => {
+    expect(reusableUserPlanetsAge.saturnAge).toEqual(.34)
+  })
+
 })
