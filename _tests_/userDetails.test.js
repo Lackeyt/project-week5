@@ -1,4 +1,4 @@
-import {UserDetails} from '../src/project-week5.js';
+import {UserDetails} from '../src/userDetails.js';
 
 describe('UserDetails', () =>{
   let reusableUserDetails;
