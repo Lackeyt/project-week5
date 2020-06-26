@@ -1,52 +1,54 @@
 //Business Logic
 
-export class UserPlanetsAge{
-  constructor(age){
-    this.earthAge = age
+export class UserDetails{
+  constructor(age, sex, continent){
+    this.earthAge = age;
+    this.userSex = sex;
+    this.userContinent = continent;
     //this.earthLifeExpectancy
   }
 
-  mercuryAge(years){
-    let mercuryAge = parseFloat((years / .24).toFixed(2))
-    return mercuryAge
+  mercuryYear(years){
+    let mercuryYear = parseFloat((years / .24).toFixed(2))
+    return mercuryYear
   }
 
-  venusAge(years){
-    let venusAge = parseFloat((years / .62).toFixed(2))
-    return venusAge
+  venusYear(years){
+    let venusYear = parseFloat((years / .62).toFixed(2))
+    return venusYear
   }
 
-  marsAge(years){
-    let marsAge = parseFloat((years / 1.88).toFixed(2))
-    return marsAge
+  marsYear(years){
+    let marsYear = parseFloat((years / 1.88).toFixed(2))
+    return marsYear
   }
 
-  jupiterAge(years){
-    let jupiterAge = parseFloat((years / 11.86).toFixed(2))
-    return jupiterAge
+  jupiterYear(years){
+    let jupiterYear = parseFloat((years / 11.86).toFixed(2))
+    return jupiterYear
   }
 
-  saturnAge(years){
-    let saturnAge = parseFloat((years / 29.46).toFixed(2))
-    return saturnAge
+  saturnYear(years){
+    let saturnYear = parseFloat((years / 29.46).toFixed(2))
+    return saturnYear
   }
 
-  uranusAge(years){
-    let uranusAge = parseFloat((years / 84.01).toFixed(2))
-    return uranusAge
+  uranusYear(years){
+    let uranusYear = parseFloat((years / 84.01).toFixed(2))
+    return uranusYear
   }
 
-  neptuneAge(years){
-    let neptuneAge = parseFloat((years / 164.79).toFixed(2))
-    return neptuneAge
+  neptuneYear(years){
+    let neptuneYear = parseFloat((years / 164.79).toFixed(2))
+    return neptuneYear
   }
 
-  plutoAge(years){
-    let plutoAge = parseFloat((years / 248.59).toFixed(2))
-    return plutoAge
+  plutoYear(years){
+    let plutoYear = parseFloat((years / 248.59).toFixed(2))
+    return plutoYear
   }
   
-  lifeExpectancy(){
-
+  earthYearsRemaining(){
+    
   }
 }

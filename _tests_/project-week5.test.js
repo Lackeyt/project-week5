@@ -1,42 +1,45 @@
-import {UserPlanetsAge} from '../src/project-week5.js';
+import {UserDetails} from '../src/project-week5.js';
 
-describe('UserPlanetsAge', () =>{
-  let reusableUserPlanetsAge;
+describe('UserDetails', () =>{
+  let reusableUserDetails;
 
   beforeEach(() => {
-    reusableUserPlanetsAge = new UserPlanetsAge(10);
+    reusableUserDetails = new UserDetails(10, "male", "North America");
   })
 
-  test("return user inputted age in Mercury years", () => {
-    expect(reusableUserPlanetsAge.mercuryYear(reusableUserPlanetsAge.earthAge)).toEqual(41.67);
+  test("return earth years in Mercury years", () => {
+    expect(reusableUserDetails.mercuryYear(reusableUserDetails.earthAge)).toEqual(41.67);
   })
 
-  test("return user inputted age in Venus years", () => {
-    expect(reusableUserPlanetsAge.venusYear(reusableUserPlanetsAge.earthAge)).toEqual(16.13);
+  test("return earth years in Venus years", () => {
+    expect(reusableUserDetails.venusYear(reusableUserDetails.earthAge)).toEqual(16.13);
   })
 
-  test("return user inputted age in mars years", () => {
-    expect(reusableUserPlanetsAge.marsYear(reusableUserPlanetsAge.earthAge)).toEqual(5.32);
+  test("return earth years in mars years", () => {
+    expect(reusableUserDetails.marsYear(reusableUserDetails.earthAge)).toEqual(5.32);
   })
 
-  test("return user inputted age in Jupiter years", () => {
-    expect(reusableUserPlanetsAge.jupiterYear(reusableUserPlanetsAge.earthAge)).toEqual(.84);
+  test("return earth years in Jupiter years", () => {
+    expect(reusableUserDetails.jupiterYear(reusableUserDetails.earthAge)).toEqual(.84);
   })
 
-  test("return user inputted age in saturn years", () => {
-    expect(reusableUserPlanetsAge.saturnYear(reusableUserPlanetsAge.earthAge)).toEqual(.34);
+  test("return earth years in saturn years", () => {
+    expect(reusableUserDetails.saturnYear(reusableUserDetails.earthAge)).toEqual(.34);
   })
 
-  test("return user inputted age in uranus years", () => {
-    expect(reusableUserPlanetsAge.uranusYear(reusableUserPlanetsAge.earthAge)).toEqual(.12);
+  test("return earth years in uranus years", () => {
+    expect(reusableUserDetails.uranusYear(reusableUserDetails.earthAge)).toEqual(.12);
   })
 
-  test("return user inputted age in neptune years", () => {
-    expect(reusableUserPlanetsAge.neptuneYear(reusableUserPlanetsAge.earthAge)).toEqual(.06);
+  test("return earth years in neptune years", () => {
+    expect(reusableUserDetails.neptuneYear(reusableUserDetails.earthAge)).toEqual(.06);
   })
 
-  test("return user inputted age in pluto years", () => {
-    expect(reusableUserPlanetsAge.plutoYear(reusableUserPlanetsAge.earthAge)).toEqual(.04);
+  test("return earth years in pluto years", () => {
+    expect(reusableUserDetails.plutoYear(reusableUserDetails.earthAge)).toEqual(.04);
   })
 
+  test("return user remaining years left alive on earth based on sex and continent of residence", () => {
+    expect(reusableUserDetails.earthYearsRemaining()).toEqual(66)
+  })
 })
