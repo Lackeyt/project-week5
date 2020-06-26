@@ -8,35 +8,35 @@ describe('UserPlanetsAge', () =>{
   })
 
   test("return user inputted age in Mercury years", () => {
-    expect(reusableUserPlanetsAge.mercuryAge(reusableUserPlanetsAge.earthAge)).toEqual(41.67);
+    expect(reusableUserPlanetsAge.mercuryYear(reusableUserPlanetsAge.earthAge)).toEqual(41.67);
   })
 
   test("return user inputted age in Venus years", () => {
-    expect(reusableUserPlanetsAge.venusAge(reusableUserPlanetsAge.earthAge)).toEqual(16.13);
+    expect(reusableUserPlanetsAge.venusYear(reusableUserPlanetsAge.earthAge)).toEqual(16.13);
   })
 
   test("return user inputted age in mars years", () => {
-    expect(reusableUserPlanetsAge.marsAge(reusableUserPlanetsAge.earthAge)).toEqual(5.32);
+    expect(reusableUserPlanetsAge.marsYear(reusableUserPlanetsAge.earthAge)).toEqual(5.32);
   })
 
   test("return user inputted age in Jupiter years", () => {
-    expect(reusableUserPlanetsAge.jupiterAge(reusableUserPlanetsAge.earthAge)).toEqual(.84);
+    expect(reusableUserPlanetsAge.jupiterYear(reusableUserPlanetsAge.earthAge)).toEqual(.84);
   })
 
   test("return user inputted age in saturn years", () => {
-    expect(reusableUserPlanetsAge.saturnAge(reusableUserPlanetsAge.earthAge)).toEqual(.34);
+    expect(reusableUserPlanetsAge.saturnYear(reusableUserPlanetsAge.earthAge)).toEqual(.34);
   })
 
   test("return user inputted age in uranus years", () => {
-    expect(reusableUserPlanetsAge.uranusAge(reusableUserPlanetsAge.earthAge)).toEqual(.12);
+    expect(reusableUserPlanetsAge.uranusYear(reusableUserPlanetsAge.earthAge)).toEqual(.12);
   })
 
   test("return user inputted age in neptune years", () => {
-    expect(reusableUserPlanetsAge.neptuneAge(reusableUserPlanetsAge.earthAge)).toEqual(.06);
+    expect(reusableUserPlanetsAge.neptuneYear(reusableUserPlanetsAge.earthAge)).toEqual(.06);
   })
 
   test("return user inputted age in pluto years", () => {
-    expect(reusableUserPlanetsAge.plutoAge(reusableUserPlanetsAge.earthAge)).toEqual(.04);
+    expect(reusableUserPlanetsAge.plutoYear(reusableUserPlanetsAge.earthAge)).toEqual(.04);
   })
 
 })
