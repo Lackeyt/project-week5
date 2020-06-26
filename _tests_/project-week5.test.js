@@ -15,4 +15,8 @@ describe('UserPlanetsAge', () =>{
     expect(reusableUserPlanetsAge.venusAge).toEqual(16)
   })
 
+  test("return user inputted age in mars years", () => {
+    expect(reusableUserPlanetsAge.marsAge).toEqual(5)
+  })
+
 })
