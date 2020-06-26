@@ -4,7 +4,7 @@ describe('UserDetails', () =>{
   let reusableUserDetails;
 
   beforeEach(() => {
-    reusableUserDetails = new UserDetails(10, "male", "North America");
+    reusableUserDetails = new UserDetails(10, "Male", "North America");
   })
 
   test("return earth years in Mercury years", () => {

@@ -49,6 +49,54 @@ export class UserDetails{
   }
   
   earthYearsRemaining(){
-    
+    let yearsRemaining;
+    switch (this.userSex){
+      case "Male":
+        switch (this.userContinent){
+          case "North America":
+            yearsRemaining = 76;
+            break;
+          case "Oceania":
+            yearsRemaining = 76;
+            break;
+          case "Europe":
+            yearsRemaining = 75;
+            break;
+          case "South America":
+            yearsRemaining = 72;
+            break;
+          case "Asia":
+            yearsRemaining = 71;
+            break;
+          case "Africa":
+            yearsRemaining = 61;
+            break;
+        }
+        break;
+      case "Famale":
+        switch (this.userContinent){
+          case "North America":
+            yearsRemaining = 81;
+            break;
+          case "Oceania":
+            yearsRemaining = 80;
+            break;
+          case "Europe":
+            yearsRemaining = 82;
+            break;
+          case "South America":
+            yearsRemaining = 78;
+            break;
+          case "Asia":
+            yearsRemaining = 75;
+            break;
+          case "Africa":
+            yearsRemaining = 65;
+            break;
+        }
+        break;
+    }
+    yearsRemaining -= this.earthAge;
+    return yearsRemaining
   }
 }
