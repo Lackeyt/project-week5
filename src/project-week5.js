@@ -5,7 +5,54 @@ export class UserDetails{
     this.earthAge = age;
     this.userSex = sex;
     this.userContinent = continent;
-    //this.earthLifeExpectancy
+    this.isOverLifeExpectancy;
+    this.earthLifeExpectancy;
+    switch (sex){
+      case "Male":
+        switch (continent){
+          case "North America":
+            this.earthLifeExpectancy = 76
+            break;
+          case "Oceania":
+            this.earthLifeExpectancy = 76;
+            break;
+          case "Europe":
+            this.earthLifeExpectancy = 75;
+            break;
+          case "South America":
+            this.earthLifeExpectancy = 72;
+            break;
+          case "Asia":
+            this.earthLifeExpectancy = 71;
+            break;
+          case "Africa":
+            this.earthLifeExpectancy = 61;
+            break;
+        }
+        break;
+      case "Female":
+        switch (continent){
+          case "North America":
+            this.earthLifeExpectancy = 81;
+            break;
+          case "Oceania":
+            this.earthLifeExpectancy = 80;
+            break;
+          case "Europe":
+            this.earthLifeExpectancy = 82;
+            break;
+          case "South America":
+            this.earthLifeExpectancy = 78;
+            break;
+          case "Asia":
+            this.earthLifeExpectancy = 75;
+            break;
+          case "Africa":
+            this.earthLifeExpectancy = 65;
+            break;
+        }
+        break;
+    }
   }
 
   mercuryYear(years){
@@ -47,56 +94,14 @@ export class UserDetails{
     let plutoYear = parseFloat((years / 248.59).toFixed(2))
     return plutoYear
   }
-  
+
   earthYearsRemaining(){
-    let yearsRemaining;
-    switch (this.userSex){
-      case "Male":
-        switch (this.userContinent){
-          case "North America":
-            yearsRemaining = 76;
-            break;
-          case "Oceania":
-            yearsRemaining = 76;
-            break;
-          case "Europe":
-            yearsRemaining = 75;
-            break;
-          case "South America":
-            yearsRemaining = 72;
-            break;
-          case "Asia":
-            yearsRemaining = 71;
-            break;
-          case "Africa":
-            yearsRemaining = 61;
-            break;
-        }
-        break;
-      case "Famale":
-        switch (this.userContinent){
-          case "North America":
-            yearsRemaining = 81;
-            break;
-          case "Oceania":
-            yearsRemaining = 80;
-            break;
-          case "Europe":
-            yearsRemaining = 82;
-            break;
-          case "South America":
-            yearsRemaining = 78;
-            break;
-          case "Asia":
-            yearsRemaining = 75;
-            break;
-          case "Africa":
-            yearsRemaining = 65;
-            break;
-        }
-        break;
-    }
-    yearsRemaining -= this.earthAge;
+    let yearsRemaining = this.earthLifeExpectancy - this.earthAge
+    return yearsRemaining
+  }
+
+  earthYearsPastExpected(){
+    let yearsRemaining = (this.earthLifeExpectancy - this.earthAge) * -1
     return yearsRemaining
   }
 }

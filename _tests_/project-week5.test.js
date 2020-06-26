@@ -46,4 +46,9 @@ describe('UserDetails', () =>{
   test("return remaining years left alive for each planet based on earth years remaining", () => {
     expect(reusableUserDetails.mercuryYear(reusableUserDetails.earthYearsRemaining())).toEqual(275)
   })
+  
+  test("return remaining years left alive for each planet based on earth years remaining", () => {
+    const userDets = new UserDetails(100, "Female", "Asia");
+    expect(userDets.mercuryYear(userDets.earthYearsPastExpected())).toEqual(104.17)
+  })
 })
