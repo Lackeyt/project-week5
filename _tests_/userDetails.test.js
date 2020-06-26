@@ -44,11 +44,13 @@ describe('UserDetails', () =>{
   })
 
   test("return remaining years left alive for each planet based on earth years remaining", () => {
+    if (reusableUserDetails.earthAge < reusableUserDetails.earthLifeExpectancy)
     expect(reusableUserDetails.mercuryYear(reusableUserDetails.earthYearsRemaining())).toEqual(275);
   })
 
   test("return years past life expectancy when earth age > life expectancy for each planet", () => {
     const userDets = new UserDetails(100, "Female", "Asia");
+    if (userDets.earthAge >= userDets.earthLifeExpectancy)
     expect(userDets.mercuryYear(userDets.earthYearsPastExpected())).toEqual(104.17);
     expect(userDets.venusYear(userDets.earthYearsPastExpected())).toEqual(40.32);
     expect(userDets.marsYear(userDets.earthYearsPastExpected())).toEqual(13.3);
