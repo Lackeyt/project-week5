@@ -1,6 +1,6 @@
 #  _Super Galactic Age Calculator_
 
-#### _Calculates a users age in years and life expectancy, converted to different planets in the solar system_
+#### _Calculates a users age in years and life expectancy information, converted to different planets in the solar system_
 ##### __Created:__ 5/29/2020
 ##### __Last Updated:__ 6/3/2020 
 ##### By _**Tyson Lackey**_  
@@ -8,7 +8,7 @@
 
 ## Description
 
-_{detailed desc}_
+_gathers user entered data (Age, sex, continent of residence). Calculates the user's expected life span, average years of life remaining, or years past expected life span based on entered data. life span and age values are converted to their equivelent year values for all planets in the solar system. _
 
 ## Behaviors
 
@@ -25,7 +25,7 @@ _{detailed desc}_
 | return user remaining years left alive based on age, sex, and continent of residence | age: 10, sex: "male", continent: "North America" | 66 |
 | return user remaining years on each planet left based on avg life expectancy | age: 10, sex: "male", continent: "North America" | mercury years left: 275 |
 | return user years over avg life expactancy if inputted age is > life expectancy for each planet | age: 100, sex: "female", continent: "Asia" | Venus: 40.32 |
-| Age must be an integer >= 0 | age: -5, age: ten | error message |
+| Age must be an integer >= 0 | age: -5, age: "twenty seven" | error message |
 
 ## Setup/Installation Requirements
 
@@ -52,10 +52,6 @@ _{detailed desc}_
 8. Open index.html in your browser:
     "open index.html"
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Directly in your Browser:
-
-* Navigate to {GH Pages URL} in your web browser.
-
 ## Known Bugs
 
 * n/a
@@ -77,7 +73,8 @@ _{detailed desc}_
 
 ## Resources:
 
-* 
+* https://www.statista.com/statistics/270861/life-expectancy-by-continent/  (life expectancy statistics)
+* https://www.exploratorium.edu/ronh/age/   (additional planet conversion values)
 
 ### License
 

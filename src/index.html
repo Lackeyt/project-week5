@@ -3,9 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Super Galactic Age Calculator</title>
 </head>
 <body>
-  
+  <div id="userInput" class="container-fluid">
+    <h1 class="jumbotron">Super Galactic Age Calculator</h1>
+    <div class="well">
+      <form id="inputForm">
+        <label for="age"><h3>Age:</h3></label><br>
+        <input type="text" id="age" maxlength="3"><br><br>
+
+        <h3>sex:</h3>
+        <input type="radio" id="male" name="sex" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <h3>Continent of Residence:</h3>
+        <input type="radio" id="nAmerica" name="continent" value="North America">
+        <label for="nAmerica">North America</label>
+        <input type="radio" id="oceania" name="continent" value="Oceania">
+        <label for="oceania">Oceania</label>
+        <input type="radio" id="europe" name="continent" value="Europe">
+        <label for="europe">Europe</label>
+        <input type="radio" id="sAmerica" name="continent" value="South America">
+        <label for="sAmerica">South America</label>
+        <input type="radio" id="asia" name="continent" value="Asia">
+        <label for="asia">Asia</label>
+        <input type="radio" id="africa" name="continent" value="Africa">
+        <label for="africa">Africa</label><br><br>
+        
+        <button type="submit" class="btn btn-secondary">Calculate!</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
