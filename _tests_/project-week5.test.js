@@ -12,7 +12,7 @@ describe('UserPlanetsAge', () =>{
   })
 
   test("return user inputted age in Venus years", () => {
-    expect(reusableUserPlanetsAge.VenusAge).toEqual(16)
+    expect(reusableUserPlanetsAge.venusAge).toEqual(16)
   })
 
 })
