@@ -31,4 +31,8 @@ describe('UserPlanetsAge', () =>{
     expect(reusableUserPlanetsAge.uranusAge).toEqual(.12);
   })
 
+  test("return user inputted age in neptune years", () => {
+    expect(reusableUserPlanetsAge.neptuneAge).toEqual(.06);
+  })
+
 })
