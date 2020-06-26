@@ -100,7 +100,7 @@ export class UserDetails{
   }
 
   earthYearsPastExpected(){
-    //let yearsRemaining = (this.earthLifeExpectancy - this.earthAge) * -1
-    //return yearsRemaining
+    let yearsRemaining = (this.earthLifeExpectancy - this.earthAge) * -1
+    return yearsRemaining
   }
 }
