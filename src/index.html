@@ -12,8 +12,9 @@
       <form id="inputForm">
         <label for="age"><h3>Age:</h3></label><br>
         <input type="text" id="age" maxlength="3"><br><br>
+        <p id="error">Please enter a whole number between 0-999</p>
 
-        <h3>sex:</h3>
+        <h3>Sex:</h3>
         <input type="radio" id="male" name="sex" value="Male">
         <label for="male">Male</label>
         <input type="radio" id="female" name="sex" value="Female">
@@ -35,6 +36,19 @@
         
         <button type="submit" class="btn btn-secondary">Calculate!</button>
       </form>
+    </div>
+  </div>
+  <div id="output" class="container-fluid">
+    <div id="ageList">
+      <h3>Your Age Across The Solar System:</h3>
+      <ul id="planetAgeList">
+      </ul>
+    </div>
+
+    <div id="yearsLeftOrOverList">
+      <h3 id="yearsLeftOrYearsOver"></h3>
+      <ul id="planetLifeLeftList">
+      </ul>
     </div>
   </div>
 </body>
