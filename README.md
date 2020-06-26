@@ -22,14 +22,8 @@ _{detailed desc}_
 | return user inputted age in Uranus years | 10 | .12 |
 | return user inputted age in Neptune years | 10 | .06 |
 | return user inputted age in Pluto years | 10 | .04 |
-| return user remaining years left based on avg life expectancy on mercury | 10 | 249.1 |
-| return user remaining years left based on avg life expectancy on Venus | 10 | 97.5 |
-| return user remaining years left based on avg life expectancy on Mars | 10 | 31.9 |
-| return user remaining years left based on avg life expectancy on Jupiter | 10 | 5.05 |
-| return user remaining years left based on avg life expectancy on Saturn | 10 | 2.03 |
-| return user remaining years left based on avg life expectancy on Uranus | 10 | .71 |
-| return user remaining years left based on avg life expectancy on Neptune | 10 | .36 |
-| return user remaining years left based on avg life expectancy on Pluto | 10 | .241 |
+| return user remaining years left alive based on age, sex, and continent of residence | age: 10, sex: "male", continent: "North America" | 66 |
+| return user remaining years on each planet left based on avg life expectancy | age: 10, sex: "male", continent: "North America" | mercury years left: 275 |
 | return user years over avg life expactancy if inputted age is > life expectancy for each planet | 100 | Venus: 32.5
 
 ## Setup/Installation Requirements

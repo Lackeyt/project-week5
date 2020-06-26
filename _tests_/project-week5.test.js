@@ -42,4 +42,8 @@ describe('UserDetails', () =>{
   test("return user remaining years left alive on earth based on sex and continent of residence", () => {
     expect(reusableUserDetails.earthYearsRemaining()).toEqual(66)
   })
+
+  test("return remaining years left alive for each planet based on earth years remaining", () => {
+    expect(reusableUserDetails.mercuryYear(reusableUserDetails.earthYearsRemaining())).toEqual(275)
+  })
 })
