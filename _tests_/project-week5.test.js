@@ -40,15 +40,22 @@ describe('UserDetails', () =>{
   })
 
   test("return user remaining years left alive on earth based on sex and continent of residence", () => {
-    expect(reusableUserDetails.earthYearsRemaining()).toEqual(66)
+    expect(reusableUserDetails.earthYearsRemaining()).toEqual(66);
   })
 
   test("return remaining years left alive for each planet based on earth years remaining", () => {
-    expect(reusableUserDetails.mercuryYear(reusableUserDetails.earthYearsRemaining())).toEqual(275)
+    expect(reusableUserDetails.mercuryYear(reusableUserDetails.earthYearsRemaining())).toEqual(275);
   })
-  
-  test("return remaining years left alive for each planet based on earth years remaining", () => {
+
+  test("return years past life expectancy when earth age > life expectancy for each planet", () => {
     const userDets = new UserDetails(100, "Female", "Asia");
-    expect(userDets.mercuryYear(userDets.earthYearsPastExpected())).toEqual(104.17)
+    expect(userDets.mercuryYear(userDets.earthYearsPastExpected())).toEqual(104.17);
+    expect(userDets.venusYear(userDets.earthYearsPastExpected())).toEqual(40.32);
+    expect(userDets.marsYear(userDets.earthYearsPastExpected())).toEqual(13.3);
+    expect(userDets.jupiterYear(userDets.earthYearsPastExpected())).toEqual(2.11);
+    expect(userDets.saturnYear(userDets.earthYearsPastExpected())).toEqual(.85);
+    expect(userDets.uranusYear(userDets.earthYearsPastExpected())).toEqual(.3);
+    expect(userDets.neptuneYear(userDets.earthYearsPastExpected())).toEqual(.15);
+    expect(userDets.plutoYear(userDets.earthYearsPastExpected())).toEqual(.1);
   })
 })

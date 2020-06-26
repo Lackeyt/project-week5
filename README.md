@@ -24,7 +24,7 @@ _{detailed desc}_
 | return user inputted age in Pluto years | 10 | .04 |
 | return user remaining years left alive based on age, sex, and continent of residence | age: 10, sex: "male", continent: "North America" | 66 |
 | return user remaining years on each planet left based on avg life expectancy | age: 10, sex: "male", continent: "North America" | mercury years left: 275 |
-| return user years over avg life expactancy if inputted age is > life expectancy for each planet | 100 | Venus: 32.5
+| return user years over avg life expactancy if inputted age is > life expectancy for each planet | age: 100, sex: "male", continent: "North America" | Venus: 40.32
 
 ## Setup/Installation Requirements
 
