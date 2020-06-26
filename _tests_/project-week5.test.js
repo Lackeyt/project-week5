@@ -8,7 +8,7 @@ describe('UserPlanetsAge', () =>{
   })
 
   test("return user inputted age in Mercury years", () => {
-    expect(reusableUserPlanetsAge.mercuryAge).toEqual(41.5)
+    expect(reusableUserPlanetsAge.mercuryAge).toEqual(41)
   })
 
 })
