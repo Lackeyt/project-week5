@@ -19,7 +19,7 @@ _{detailed desc}_
 | return user inputted age in Mars years | 10 | 5.32 |
 | return user inputted age in Jupiter years | 10 | .84 |
 | return user inputted age in Saturn years | 10 | .34 |
-| return user inputted age in Uranus years | 10 | .11 |
+| return user inputted age in Uranus years | 10 | .12 |
 | return user inputted age in Neptune years | 10 | .06 |
 | return user inputted age in Pluto years | 10 | .04 |
 | return user remaining years left based on avg life expectancy on mercury | 10 | 249.1 |
